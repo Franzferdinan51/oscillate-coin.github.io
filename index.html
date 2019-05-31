@@ -50,7 +50,7 @@
 <script>
 	function updateNet3() {
 		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
-			var text = `${data.network.difficulty}`;
+			var text = `${data.pool.difficulty}`;
 			var text = "Current Hashrate: " + Math.round(data.network.difficulty / 60 / 1000) + " KH/s"
 			$(".mypanel3").html(text);
 			setTimeout(updateNet3(), 100000);
