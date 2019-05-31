@@ -37,7 +37,7 @@
 
 <script>
 	function updateNet2() {
-		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
+		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
 			var text = `${data.network.difficulty}`;
 			var text = "Current Difficulty: " + Math.round(data.network.difficulty / 1000000) + " MH"
 			$(".mypanel2").html(text);
@@ -49,7 +49,7 @@
 
 <script>
 	function updateNet3() {
-		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
+		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
 			var text = `${data.pool.hashrate}`;
 			var text = "Current Hashrate: " + Math.round(data.network.difficulty / 10000000) + " KH/s"
 			$(".mypanel3").html(text);
