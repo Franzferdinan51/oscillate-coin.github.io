@@ -25,7 +25,7 @@
 
 <script>
 	function updateNet() {
-		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
+		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
 			var text = `${data.network.height}`;
 			var text = "Current Block Height: " + Math.round(data.network.height)
 			$(".mypanel1").html(text);
