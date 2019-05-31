@@ -13,7 +13,6 @@
 		ul {
 			list-style-type: none;
 		}
-
 		A {
 			text-decoration: none;
 		}
@@ -28,13 +27,10 @@
 		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.network.height}`;
 			var text = "Current Block Height: " + Math.round(data.network.height)
-
 			$(".mypanel1").html(text);
-
 			setTimeout(updateNet(), 100000);
 		});
 	}
-
 	setTimeout(updateNet(), 100000);
 </script>
 
@@ -43,13 +39,10 @@
 		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.network.difficulty}`;
 			var text = "Current Difficulty: " + Math.round(data.network.difficulty / 1000000) + " MH"
-
 			$(".mypanel2").html(text);
-
 			setTimeout(updateNet2(), 100000);
 		});
 	}
-
 	setTimeout(updateNet2(), 100000);
 </script>
 
@@ -58,13 +51,10 @@
 		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.pool.hashrate}`;
 			var text = "Current Hashrate: " + Math.round(data.network.difficulty / 10000000) + " KH/s"
-
 			$(".mypanel3").html(text);
-
 			setTimeout(updateNet3(), 100000);
 		});
 	}
-
 	setTimeout(updateNet3(), 100000);
 </script>
 
@@ -101,7 +91,7 @@
 				<center>
 					<ul>
 						<li>Coin Name: Oscillate</li>
-						<li>Ticker: OSC</li>
+						<li>Ticker: OSL</li>
 						<li>Algorithm: cryptonight_turtle</li>
 						<li>Coin Type: POW</li>
 						<li>Max. Supply: 100,000,000,000.00</li>
@@ -121,7 +111,7 @@
 			<article id="work">
 				<center>
 					<h2 class="major">About OSC</h2>
-					<p>Oscillate [OSC] is an ASIC resistant fork of TurtleCoin, using the CryptoNight_Turtle algorithm. Quick transactions, privacy, Ease of use make this coin perfect for paying anyone, anywhere. Oscillate can also be mined on any windows or
+					<p>Oscillate [OSL] is an ASIC resistant fork of TurtleCoin, using the CryptoNight_Turtle algorithm. Quick transactions, privacy, Ease of use make this coin perfect for paying anyone, anywhere. Oscillate can also be mined on any windows or
 						Linux based PC, no matter how strong or weak!</p>
 					<br>
 					<p>If you do not know what TurtleCoin is, it is a fairly popular cryptonote coin, which is what this was forked from. Oscillate was forked from this code for a few reasons.</p>
@@ -135,11 +125,6 @@
 						<br>
 						<li> 4. An easy to use wallet is included with the release. </li>
 					</ul>
-					<p> Oscilalte will be forking to a custom algorithm called Hydra Chaos.</p>
-					<br>
-					<ul>
-						<li> HydraChaos is completely built from the ground up. While it can merge other coins into the algo easily... it can only do so because of the parent algo.. once a coin adopts HC it's very hard to fork away from it. The design behind the algo is 3 fold logic. First we want to ensure that no single person can manipulate the network. With HC there is no such thing as a 51% attack. As the algo requires 2 chains that link with microchains. On top of that, HC mutates and verifies transactions with push design instead of a pull design. All algos out there currently use the pull design. They ask the daemon for information and permission to create a transaction... with HC the daemon and chains watch the potential transaction pool and push the information that it validates. The miners have very little control in that regard. In fact, it is entirely possible that a mining program could be open and never hash a single validation (unlikely but possible) and still be rewarded due to the nature of RoundRush. RoundRush is a new technique developed specifically for HC that pushes hashing info to available miners. The miners arent able to do anything until the daemon says so. As the algo mutates there is no possible way for the miner to know what the algo has mutated to without direct input from the daemon</li>
-					</ul>
 				</center>
 			</article>
 
@@ -147,7 +132,7 @@
 
 			<article id="about" style="width: 1200px">
 				<center>
-					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Trade OSC</h2></a>
+					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Trade OSL</h2></a>
 					<iframe width="1000" height="500" src="https://chart.tradecx.io/?ticker=oscltc"></iframe>
 				</center>
 			</article>
@@ -158,8 +143,22 @@
 				<center>
 					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Known OSC Pools</h2></a>
 					<a href="http://oscillatepool.ml/">
-						<p>Oscillatepool: <div class="mypanel3"></div>
+						<p>Official Oscillate pool <div class="mypanel3"></div>
 							<p>
+					<a href="https://osc.llama.horse/osc">
+						<p>Llama.Horse Pool <div class="mypanel3"></div>
+							<p>
+					<a href="https://osc.turbomine.co/">
+						<p>TurboMine Pool <div class="mypanel3"></div>
+							<p>
+					<a href="https://tlrmosc.turbomine.co/">
+						<p>TurboMine Pool (MERGED WITH TLRM) <div class="mypanel3"></div>
+							<p>
+					<a href="http://osc.line-pool.ru/">
+						<p>Line Pool <div class="mypanel3"></div>
+							<p>
+								
+				</center>
 				</center>
 			</article>
 		</div>
