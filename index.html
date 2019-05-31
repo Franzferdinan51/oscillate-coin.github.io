@@ -51,7 +51,7 @@
 	function updateNet3() {
 		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
 			var text = `${data.pool.difficulty}`;
-			var text = "Current Hashrate: " + Math.round(data.network.difficulty / 60 / 1000) + " KH/s"
+			var text = "Network Hash: " + Math.round(data.network.difficulty / 60 / 1000) + " KH/s"
 			$(".mypanel3").html(text);
 			setTimeout(updateNet3(), 100000);
 		});
@@ -143,6 +143,7 @@
 			<article id="mining" style="width: 1200px">
 				<center>
 					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Known OSC Pools</h2></a>
+					<h3><div class="mypanel3"></div></h3>
 					<a href="http://oscillatepool.ml/">
 						<p>Official Oscillate pool<p>
 					<a href="https://osc.llama.horse/osc">
