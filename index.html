@@ -25,7 +25,7 @@
 
 <script>
 	function updateNet() {
-		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
+		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.network.height}`;
 			var text = "Current Block Height: " + Math.round(data.network.height)
 			$(".mypanel1").html(text);
@@ -37,7 +37,7 @@
 
 <script>
 	function updateNet2() {
-		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
+		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.network.difficulty}`;
 			var text = "Current Difficulty: " + Math.round(data.network.difficulty / 1000000) + " MH"
 			$(".mypanel2").html(text);
@@ -49,7 +49,7 @@
 
 <script>
 	function updateNet3() {
-		$.getJSON('https://osc.turbomine.co:8114/stats', function(data) {
+		$.getJSON('http://oscillatepool.ml:8245/stats', function(data) {
 			var text = `${data.pool.difficulty}`;
 			var text = "Network Hash: " + Math.round(data.network.difficulty / 60 / 1000) + " KH/s"
 			$(".mypanel3").html(text);
@@ -77,7 +77,7 @@
 					<li><a href="#intro">SPECS</a></li>
 					<li><a href="#work">ABOUT</a></li>
 					<li><a href="#about">TRADE</a></li>
-					<li><a href="https://github.com/oscillate-coin/">GITHUB</a></li>
+					<li><a href="https://github.com/oscillate-coin/oscillate">GITHUB</a></li>
 					<li><a href="#mining">POOLS</a></li>
 				</ul>
 			</nav>
@@ -111,7 +111,7 @@
 			<!-- Work -->
 			<article id="work">
 				<center>
-					<h2 class="major">About OSC</h2>
+					<h2 class="major">About OSL</h2>
 					<p>Oscillate [OSL] is an ASIC resistant fork of TurtleCoin, using the CryptoNight_Turtle algorithm. Quick transactions, privacy, Ease of use make this coin perfect for paying anyone, anywhere. Oscillate can also be mined on any windows or
 						Linux based PC, no matter how strong or weak!</p>
 					<br>
@@ -133,8 +133,8 @@
 
 			<article id="about" style="width: 1200px">
 				<center>
-					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Trade OSL</h2></a>
-					<iframe width="1000" height="500" src="https://chart.tradecx.io/?ticker=oscltc"></iframe>
+					<h2 class="major"> <a href="https://tradecx.io/markets/osldoge"></a>Trade OSL</h2></a>
+					<iframe width="1000" height="500" src="https://chart.tradecx.io/?ticker=osldoge"></iframe>
 				</center>
 			</article>
 
@@ -142,7 +142,7 @@
 
 			<article id="mining" style="width: 1200px">
 				<center>
-					<h2 class="major"> <a href="https://tradecx.io/markets/oscbtc">Known OSC Pools</h2></a>
+					<h2 class="major">Known OSL Pools</h2></a>
 					<h3><div class="mypanel3"></div></h3>
 					<a href="http://oscillatepool.ml/">
 						<p>Official Oscillate pool<p>
@@ -162,7 +162,7 @@
 		<!-- Footer -->
 		<footer id="footer">
 			<p class="copyright">&copy;
-				Oscillate <a href="https://twitter.com/FallenGrav1ty">FallenGravity</a>.</p>
+				<a href="https://twitter.com/CoinOscillate">Oscillate</a> <a href="https://twitter.com/FallenGrav1ty">FallenGravity</a>.</p>
 		</footer>
 	</div>
 	<!-- BG -->
